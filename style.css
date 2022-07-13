@@ -40,10 +40,18 @@
 
 .header .navBar .navBarNav .navBarItem .navBarLink {
     text-decoration: none;
+    text-align: center ;
     color: aliceblue;
-    margin-left: 20px;
+    margin-left: 15px;
+
 }
 
+.navBarItem:hover  {
+border: 1.5px solid aliceblue;
+padding: 0.25rem;
+transition: all 1s;
+
+}
 .header .h1 {
     color: rgb(214, 180, 176);
     font-weight: 200;
