@@ -1,0 +1,9 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+@import './../sass/misc/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+@import './partials/header.scss';
+@import './partials/footer.scss';
