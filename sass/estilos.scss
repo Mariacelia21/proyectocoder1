@@ -2,8 +2,9 @@
 @import './../sass/misc/variables.scss';
 @import './partials/header.scss';
 @import './partials/footer.scss';
+
 * {
-   font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 200;
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@
 }
 
 .header {
-  background-color: $color-celeste ;
+  background-color: $color-celeste;
   text-align: center;
   justify-items: auto;
   align-items: center;
@@ -49,7 +50,8 @@
     text-decoration: none;
     font-size: 20px;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: '';
       height: 14px;
       width: 14px;
@@ -71,13 +73,15 @@
       content: '';
       left: 0;
       bottom: 0;
-      border-bottom: 3px solid  $color-rosa;
-      border-left: 3px solid  $color-rosa;
+      border-bottom: 3px solid $color-rosa;
+      border-left: 3px solid $color-rosa;
       transform: translate(100%, -50%);
     }
 
     &:hover {
-      &:before, &:after {
+
+      &:before,
+      &:after {
         transform: translate(0, 0);
         opacity: 1;
       }
@@ -97,22 +101,7 @@
   padding-inline-start: 3rem;
 }
 
-.img1 {
-  opacity: 0.5;
-  transition: all 0.8s ease-in-out;
-  gap: 1rem;
-  margin: 1rem;
-  text-align: center;
-  overflow: hidden;
-  margin-bottom: 20px;
-  height: auto;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
-.img2 {
+.contenedor {
   opacity: 0.5;
   transition: all 0.8s ease-in-out;
   display: flex;
@@ -120,13 +109,27 @@
   gap: 1rem;
   margin: 1rem;
   height: auto;
-  width: 360px;
+  margin-bottom: 20px;
   text-align: center;
+
+
+  .contenedor--img1 {
+    @extend .contenedor;
+    overflow: hidden;
+
+  }
+
+  .contenedor--img2 {
+    @extend .contenedor;
+    width: 360px;
+  }
 
   &:hover {
     opacity: 1;
   }
+
 }
+
 
 .link {
   display: flex;
@@ -174,7 +177,9 @@
   padding: 0rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', sans-serif;
-  color: $color-rosa ;
+  color: $color-rosa;
 }

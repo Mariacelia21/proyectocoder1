@@ -1,3 +1,4 @@
+@import './partials/footer.scss';
 .footer {
   background-color: #f08080;
   position: absolute;

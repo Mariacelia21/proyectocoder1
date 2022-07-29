@@ -112,21 +112,7 @@ header {
           padding-inline-start: 3rem;
 }
 
-.img1 {
-  opacity: 0.5;
-  transition: all 0.8s ease-in-out;
-  gap: 1rem;
-  margin: 1rem;
-  text-align: center;
-  overflow: hidden;
-  margin-bottom: 20px;
-  height: auto;
-}
-.img1:hover {
-  opacity: 1;
-}
-
-.img2 {
+.contenedor, .contenedor .contenedor--img2, .contenedor .contenedor--img1 {
   opacity: 0.5;
   transition: all 0.8s ease-in-out;
   display: flex;
@@ -134,10 +120,16 @@ header {
   gap: 1rem;
   margin: 1rem;
   height: auto;
-  width: 360px;
+  margin-bottom: 20px;
   text-align: center;
 }
-.img2:hover {
+.contenedor .contenedor--img1 {
+  overflow: hidden;
+}
+.contenedor .contenedor--img2 {
+  width: 360px;
+}
+.contenedor:hover, .contenedor .contenedor--img1:hover, .contenedor .contenedor--img2:hover {
   opacity: 1;
 }
 
@@ -187,7 +179,9 @@ header {
   padding: 0rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
   color: #f08080;
 }/*# sourceMappingURL=estilos.css.map */
