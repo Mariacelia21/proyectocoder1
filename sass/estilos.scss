@@ -5,6 +5,7 @@
 @import'./misc/variables.scss';
 @import './partials/header.scss';
 @import './partials/footer.scss';
+@import './../sass/misc/mixins';
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -16,16 +17,6 @@
 
 .html {
   font-size: 62, 5%;
-}
-
-.header {
-  background-color: $color-celeste;
-  text-align: center;
-  justify-items: auto;
-  align-items: center;
-  color: $color-texto-header;
-  height: 6rem;
-  left: 0rem;
 }
 
 .navbar {
@@ -105,10 +96,10 @@
 }
 
 .contenedor {
+  @include flex(column, auto, auto);
+  font-size: map-get($fuentes, text-smal);
   opacity: 0.5;
   transition: all 0.8s ease-in-out;
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
   margin: 1rem;
   height: auto;
@@ -162,9 +153,9 @@
   justify-items: center;
   color: $color-rosa;
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 20px;
   height: auto;
-  font-size: medium;
+  font-size: map-get($fuentes, text-smal) ;
 }
 
 .footer {

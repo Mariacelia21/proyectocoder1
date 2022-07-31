@@ -1,16 +1,16 @@
+/*colores*/
+/*Sapcings*/
+/*Font-sizes*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 /*colores*/
 /*Sapcings*/
 /*Font-sizes*/
-/*colores*/
-/*Sapcings*/
-/*Font-sizes*/
-header {
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   background-color: lightseagreen;
   text-align: center;
   justify-items: auto;
@@ -34,4 +34,9 @@ header {
   margin-top: 10px;
   margin: 0rem;
   padding: 0rem;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }/*# sourceMappingURL=index.css.map */
