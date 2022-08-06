@@ -4,8 +4,8 @@
   "description": "utilizacion sass",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "build-css": "node-sass --include-path scss sass/estilos.scss css css/styles1.css ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass -–include-path scss sass/estilos.scss css css/styles1.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -251,5 +251,6 @@
     "wrap-ansi": "^7.0.0",
     "yargs": "^17.5.1",
     "y18n": "^5.0.8"
-  }
+  },
+  "keywords": []
 }
